@@ -1,0 +1,15 @@
+name: docker-image
+version: 0.0.1
+title: generic tests for docker images
+inputs:
+  - name: debian-packages
+    type: array
+  - name: docker-entrypoint
+    description: Full path to the entrypoint of the image
+    type: string
+  - name: ports
+    type: hash
+    description: Check for open TCP/UDP ports
+  - name: processes
+    description: running processes in the container
+    type: array
